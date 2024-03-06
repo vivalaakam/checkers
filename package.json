@@ -1,6 +1,8 @@
 {
   "private": true,
   "workspaces": [
-    "client"
+    "client",
+    "trainer",
+    "shared"
   ]
 }

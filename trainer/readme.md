@@ -1,0 +1,1 @@
+node --require ts-node/register src/tournaments-single.ts --history 3 --epoch 64 --best true  --layers 512 256  128 128 64 --iterations 3

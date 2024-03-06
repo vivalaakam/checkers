@@ -1,19 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
-</head>
-<body>
-<div id="app"></div>
-<div>
-    <label for="depth">
-        <input id="depth" value="2"/>
-    </label>
-    <button id="game">Run game</button>
-</div>
-<script type="module" src="/src/main.ts"></script>
-</body>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div>
+      <div>
+        <span>White</span>
+        <select id="playerWhite">
+          <option value="ab">AB Search</option>
+          <option value="nn">Neural network</option>
+        </select>
+        <label for="depthWhite" style="display: inline-block;">
+          <input id="depthWhite" value="2" />
+        </label>
+
+        <label for="fileWhite" style="display: none;">
+          <input id="fileWhite" type="file" />
+        </label>
+      </div>
+      <div>
+        <span>Black</span>
+        <select id="playerBlack">
+          <option value="ab">AB Search</option>
+          <option value="nn">Neural network</option>
+        </select>
+        <label for="depthBlack" style="display: inline-block;">
+          <input id="depthBlack" value="2" />
+        </label>
+
+        <label for="fileBlack" style="display: none;">
+          <input id="fileBlack" type="file" />
+        </label>
+      </div>
+      <div>
+        <label for="loadSnapshots">
+          <span>Load snapshots</span>
+          <input id="loadSnapshots" type="checkbox" />
+      </div>
+      <button id="game">Run game</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
